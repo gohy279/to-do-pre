@@ -52,12 +52,12 @@ function createItem(task) {
   });
 
   editButton.addEventListener("click", () => {
-    textElement.contentEditable = "true";
+    textElement.contentEditable = true;
     textElement.focus();
   });
 
   textElement.addEventListener("blur", () => {
-    textElement.contentEditable = "false";
+    textElement.contentEditable = false;
     saveTasks(getTasksFromDOM());
   });
 
